@@ -13,12 +13,12 @@ def main(v_result):
     if a[1] not in ['+', '-', '/', '*']:
         return "throws Exception"
     if a[1] == '+':
-        return(int(a[0]) + int(a[2]))
+        return(str(int(a[0]) + int(a[2])))
     elif a[1] == '-':
-        return(int(a[0]) - int(a[2]))
+        return(str(int(a[0]) - int(a[2])))
     elif a[1] == '*':
-        return(int(a[0]) * int(a[2]))
+        return(str(int(a[0]) * int(a[2])))
     elif a[1] == '/':
-        return(int(int(a[0]) // int(a[2])))
+        return(str(int(a[0]) // int(a[2])))
 
 print(main(input()))
